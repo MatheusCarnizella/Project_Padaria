@@ -10,5 +10,6 @@ namespace Project_Padaria.SRC
     internal interface IInterface
     {
         void Exibir();
+        void Exibir2();
     }
 }

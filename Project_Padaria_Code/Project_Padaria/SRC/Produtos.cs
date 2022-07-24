@@ -11,23 +11,25 @@ namespace Project_Padaria.SRC
     {
         public string Produto;
         public int Quantidade;
-        public string Sortido;
-        public string Embalado;
+        public double Preco;
 
-        public Produtos(string Produto, int Quantidade, string Sortido, string Embalado)
+        public Produtos(string Produto, int Quantidade, double Preco)
         {
             this.Produto = Produto;
             this.Quantidade = Quantidade;
-            this.Sortido = Sortido;
-            this.Embalado = Embalado;
+            this.Preco = Preco;
         }
 
         public void Exibir()
         {
             Console.WriteLine($"Nome do produto: {Produto}");
             Console.WriteLine($"Quantidade Disponivel: {Quantidade}");
-            Console.WriteLine($"O produto é {Sortido}");
-            Console.WriteLine($"O produto é {Embalado}");
+            Console.WriteLine($"Preco do produto: {Preco}");
+        }
+
+        public void Exibir2()
+        {
+
         }
     }
 }
